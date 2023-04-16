@@ -14,8 +14,16 @@
             }
         },
         created() {
+            setTimeout(() => {
             this.nome = 'David'
+        },  1000);
+        },
+        mounted() {
+            setTimeout(() => {
+            this.nome = 'Aleatorio'
+        },  2000);
         },
     }
 
+    
 </script>
