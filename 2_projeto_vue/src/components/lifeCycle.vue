@@ -17,12 +17,20 @@
             setTimeout(() => {
             this.nome = 'David'
         },  1000);
+
+        this.lifeCycle()
         },
         mounted() {
             setTimeout(() => {
             this.nome = 'Aleatorio'
         },  2000);
+        this.lifeCycle()
         },
+        methods: {
+            lifeCycle() {
+                console.log("executou")
+            }
+        }
     }
 
     
