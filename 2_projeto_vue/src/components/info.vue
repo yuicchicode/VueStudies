@@ -5,10 +5,11 @@
         <p v-else>Estou em busca de novas oportunidades!</p>
         <p>Utilizo as seguintes tecnologias: </p>
         <ul>
-            <li>JavaScript</li>
-            <li>HTML e CSS</li>
-            <li>Vue.js</li>
-            <li>Node.js</li>
+            <li v-for="(techology, index) in backend_technologies" v-bind:key="index">{{ techology }}</li>
+        </ul>
+        <p>Tecnologias para front-end</p>
+        <ul>
+            <li v-for="technology in frontend_technologies" :key="technology.id">{{ technology.language }}</li>
         </ul>
         <div>
             <button @click="showEmail"> {{buttonText}} </button>
@@ -33,8 +34,19 @@ import Picture from './Picture.vue'
             mostrar_email: false,
             email: "teste@gmail.com",
             meu_link: 'https://google.com',
-            buttonText: 'Mostrar E-mail'
-            }
+            buttonText: 'Mostrar E-mail',
+            backend_technologies: [
+                'JavaScript',
+                'C#',
+                'Python',
+                'Nodejs',
+            ],
+            frontend_technologies:[
+                {id: 1, language: 'HTML'},
+                {id: 2, language: 'CSS'},
+                {id: 3, language: 'Vue'},
+            ],
+        }
         },
         methods: {
             showEmail() {
