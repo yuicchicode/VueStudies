@@ -72,7 +72,27 @@ export default {
                 opcionais: Array.from(this.opcionais),
                 status: "Solicitado"
             }
-            console.log(data);
+            
+            const dataJson = JSON.stringify(data);
+
+            const req = await fetch("http://localhost:3000/burgers", {
+                method: "POST",
+                headers: {"Content-Type" : "application/json"},
+                body: dataJson
+            });
+
+            const res = await req.json();
+
+            // system msg
+
+            // clean msg
+
+            // clean fields
+
+            this.nome = "";
+            this.carne = "";
+            this.pao = "";
+            this.opcionais = "";
 
         }
     },
