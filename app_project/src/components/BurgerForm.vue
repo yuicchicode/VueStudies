@@ -1,6 +1,6 @@
 <template>
     <div>
-        <Message/>
+        <Message :msg="msg" v-show="msg"/>
         <div id="burger-form-container">
             <form id="burger-form" @submit="createBurger">
                 <div class="input-container">
@@ -87,11 +87,12 @@ export default {
             const res = await req.json();
 
             // system msg
+            this.msg = `Pedido Numero ${res.id} realizado com sucesso`
 
             // clean msg
+            setTimeout(() => this.msg = "", 3000)
 
             // clean fields
-
             this.nome = "";
             this.carne = "";
             this.pao = "";
