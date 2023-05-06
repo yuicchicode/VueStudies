@@ -13,8 +13,8 @@ import BurgerForm from "../components/BurgerForm.vue"
 export default {
     name: "Home",
     components: {
-        Banner,
-        BurgerForm
+      Banner,
+      BurgerForm
     }
 }
 </script>
