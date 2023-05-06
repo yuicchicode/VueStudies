@@ -129,6 +129,28 @@
       ],
       "status": "Solicitado",
       "id": 6
+    },
+    {
+      "nome": "Yuicchi22",
+      "carne": "Alcatra",
+      "pao": "Italiano Branco",
+      "opcionais": [
+        "Tomate",
+        "Cheddar"
+      ],
+      "status": "Solicitado",
+      "id": 7
+    },
+    {
+      "nome": "Teste8",
+      "carne": "Veggie burger",
+      "pao": "Pão Mexicano",
+      "opcionais": [
+        "Cebola roxa",
+        "Tomate"
+      ],
+      "status": "Solicitado",
+      "id": 8
     }
   ]
 }
