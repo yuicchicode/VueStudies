@@ -35,7 +35,28 @@
 
 <script>
 export default {
-    name: "Dashboard"
+    name: "Dashboard",
+    data() {
+        return {
+            burgers: null,
+            burger_id: null,
+            status: []
+        }
+    },
+    methods: {
+        async getPedidos() {
+
+            const req = await fetch("http://localhost:3000/burgers")
+
+            const data = await req.json();
+
+            this.burgers = data;
+
+            // get status
+
+            
+        }
+    }
 }
 
 </script>
@@ -68,7 +89,7 @@ export default {
     .burger-table-row {
         width: 100%;
         padding: 12px;
-        border: 1px solid #CCC;
+        border-bottom: 1px solid #CCC;
     }
 
     #burger-table-heading .order-id,
