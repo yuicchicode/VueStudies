@@ -83,7 +83,7 @@
   ],
   "burgers": [
     {
-      "nome": "Matheus Battisti",
+      "nome": "Matheus",
       "carne": "Picanha",
       "pao": "Italiano Branco",
       "opcionais": [
@@ -164,6 +164,16 @@
       ],
       "status": "Solicitado",
       "id": 9
+    },
+    {
+      "nome": "Anderson",
+      "carne": "Alcatra",
+      "pao": "3 Queijos",
+      "opcionais": [
+        "Bacon"
+      ],
+      "status": "Solicitado",
+      "id": 10
     }
   ]
 }
