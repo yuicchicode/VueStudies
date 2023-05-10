@@ -83,18 +83,6 @@
   ],
   "burgers": [
     {
-      "nome": "Matheus",
-      "carne": "Picanha",
-      "pao": "Italiano Branco",
-      "opcionais": [
-        "Bacon",
-        "Salame",
-        "Cebola roxa"
-      ],
-      "status": "Finalizado",
-      "id": 1
-    },
-    {
       "nome": "João Coelho",
       "carne": "Maminha",
       "pao": "3 Queijos",
@@ -151,29 +139,6 @@
       ],
       "status": "Solicitado",
       "id": 8
-    },
-    {
-      "nome": "David",
-      "carne": "Maminha",
-      "pao": "3 Queijos",
-      "opcionais": [
-        "Bacon",
-        "Salame",
-        "Cebola roxa",
-        "Pepino"
-      ],
-      "status": "Solicitado",
-      "id": 9
-    },
-    {
-      "nome": "Anderson",
-      "carne": "Alcatra",
-      "pao": "3 Queijos",
-      "opcionais": [
-        "Bacon"
-      ],
-      "status": "Solicitado",
-      "id": 10
     }
   ]
 }
