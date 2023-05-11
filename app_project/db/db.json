@@ -83,17 +83,6 @@
   ],
   "burgers": [
     {
-      "nome": "João Coelho",
-      "carne": "Maminha",
-      "pao": "3 Queijos",
-      "opcionais": [
-        "Salame",
-        "Cebola roxa"
-      ],
-      "status": "Solicitado",
-      "id": 4
-    },
-    {
       "nome": "teste",
       "carne": "Maminha",
       "pao": "Italiano Branco",
@@ -102,7 +91,7 @@
         "Tomate",
         "Cheddar"
       ],
-      "status": "Solicitado",
+      "status": "Em produção",
       "id": 5
     },
     {
